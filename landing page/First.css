@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url("image1111.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.top .overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(43, 17, 17, 0.245);
+}
+
+ .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding:5vw; 
+    color: rgba(251, 253, 253, 0.647);
+    top: 10%;
+} 
+
+.text h1 {
+    /* padding-left: 5%; */
+    color: rgba(251, 253, 253, 0.647);
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.rtext1 {
+    padding-left: 5%;
+}
+.rtext1 p {
+    color: rgba(251, 253, 253, 0.944);
+    font-size: 30px;
+}
+.rtext2 {
+    padding-left: 5%;
+}.rtext2 p {
+    color: rgba(251, 253, 253, 0.944);
+    font-size: 30px;
+}
+.icons i {
+    font-size: 30px; /* Increase the font size to make icons larger */
+    margin: 5px; /* Add some space between the icons */
+}
+
+.bottom {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.b1, .b2, .b3 .up, .b3 .down {
+    /* padding: 20px; Add padding to the image containers */
+    box-shadow:inset 0 0 20px rgba(0, 0, 0, 2); /* Inner shadow effect */
+    border: 3px solid rgba(129, 126, 126, 0.985); /* Add border to each image container */
+    border-radius: 12px;
+}
+
+.b1 {
+    width: 30%;
+    min-height: inherit;
+    background-image: url("image3.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(8px);
+}
+.b1 h1 {
+    color: goldenrod;
+    font-size: 250%;
+    text-align: center;
+    padding: 30px;
+}
+
+.b1 p {
+    font-size: 170%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 {
+    width: 50%;
+    min-height: inherit;
+    background-image: url("image5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.b2 .overlay {
+    justify-content: right;
+    position: relative;
+    margin-left: 55%;
+    width: 40%;
+    height: 100%;
+    /* padding: 5vw; */
+}
+.b2 .overlay h1{
+    color: goldenrod;
+    padding-top: 40px;
+    font-size:250% ;
+}
+
+.b2 .overlay p {
+    padding-top: 40px;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 170%;
+}
+
+.b3 {
+    width: 40%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.b3 .up {
+    width: 100%;
+    min-height: inherit;
+    background-image: url("image2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.b3 .up h1 {
+    color: goldenrod;
+    text-align: left;
+    padding: 30px;
+}
+
+.b3 .up p {
+    font-size: 140%;
+    justify-content: left;
+    position: relative;
+    margin-right: 50%;
+    color: rgb(4, 4, 4);
+    text-align: center;
+    padding: 2px;
+}
+
+.b3 .down {
+    width: 100%;
+    min-height: 20vw; 
+    min-height: inherit;
+    background-image: url("image4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.b3 .down .overlay {
+    position: center;
+    width: 100%;
+    min-height: 20vw;
+    background-color: rgba(248, 247, 247, 0.397);
+}
+.b3 .down .overlay h1{
+    color: rgba(13, 5, 151, 0.778);
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+@media (max-width: 700px) {
+    .rtext {
+        flex-direction: column;
+    }
+    .b2 .overlay {
+        width: 100%;
+        margin-left: initial;
+    }
+}
+
+@media (max-width: 500px) {
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1 {
+        font-size: 5vh;
+    }
+    .text.image {
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .rtext {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p {
+        margin-top: 10px;
+    }
+    .icons {
+        margin-top: 10px;
+    }
+    .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1 {
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2 {
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+    .b3 {
+        width: 100%;
+    }
+    .b3 .up {
+        min-height: 30vh;
+    }
+}
